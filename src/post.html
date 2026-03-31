@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Judul Artikel</title>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-semibold">MyBlog</h1>
+
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="../index.html">Home</a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+    <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+      <a href="../index.html" class="block py-2">Home</a>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE -->
+  <section class="max-w-5xl mx-auto px-4 mt-8">
+    <img src="https://picsum.photos/1200/500" 
+         class="w-full h-[300px] md:h-[400px] object-cover rounded-xl">
+  </section>
+
+  <!-- TITLE + META -->
+  <section class="max-w-3xl mx-auto px-4 mt-8">
+    <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+      Judul Artikel yang Menarik dan Panjang
+    </h1>
+
+    <div class="flex items-center gap-3 mt-4 text-sm text-gray-500">
+      <img src="https://i.pravatar.cc/40" class="w-8 h-8 rounded-full">
+      <span>Oleh John Doe</span>
+      <span>•</span>
+      <span>31 Maret 2026</span>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <article class="max-w-3xl mx-auto px-4 mt-8 leading-relaxed text-gray-800">
+
+    <p class="mb-6">
+      Ini adalah contoh paragraf pembuka. Fokus utama dari desain ini adalah kenyamanan membaca.
+      Seperti Medium, kita memberikan ruang yang cukup agar mata tidak lelah.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">
+      Sub Judul Artikel
+    </h2>
+
+    <p class="mb-6">
+      Tailwind CSS memungkinkan kita membuat desain modern dengan cepat tanpa harus menulis CSS dari nol.
+      Kita cukup menggunakan utility classes.
+    </p>
+
+    <blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6">
+      "Design is not just what it looks like and feels like. Design is how it works."
+    </blockquote>
+
+    <p class="mb-6">
+      Dengan pendekatan ini, kita bisa membangun blog yang ringan, cepat, dan tetap terlihat profesional.
+    </p>
+
+    <img src="https://picsum.photos/800/400" class="rounded-lg my-6">
+
+    <p class="mb-6">
+      Ini adalah paragraf penutup. Kamu bisa menambahkan call to action atau sekadar penutup santai.
+    </p>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="border-t mt-16 py-6 text-center text-sm text-gray-500">
+    © 2026 MyBlog
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

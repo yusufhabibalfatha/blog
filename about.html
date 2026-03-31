@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>MyBlog</title>
+  <meta name="description" content="Tempat berbagi ide dan pengalaman dengan desain modern dan responsive." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="./assets/android-chrome-192x192.png" />
+  <link rel="icon" sizes="512x512" href="./assets/android-chrome-512x512.png" />
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="./assets/site.webmanifest" />
+  
+  <!-- Tailwind CSS -->
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- Logo -->
+      <h1 class="text-xl font-semibold">MyBlog</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="./index.html" class="hover:text-gray-500">Home</a>
+        <a href="./about.html" class="hover:text-gray-500">About</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="md:hidden text-2xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+      <a href="./index.html" class="block py-2">Home</a>
+      <a href="./about.html" class="block py-2">About</a>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="max-w-3xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold mb-6">About MyBlog</h1>
+
+    <p class="mb-6 leading-relaxed">
+      MyBlog adalah blog pribadi yang dibuat untuk berbagi ide, pengalaman, dan tips seputar pengembangan web, desain, dan teknologi.  
+      Fokus utama kami adalah konten yang mudah dibaca, responsive, dan cepat.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Visi & Misi</h2>
+    <p class="mb-6 leading-relaxed">
+      Visi kami adalah memberikan konten berkualitas tinggi dengan desain modern.  
+      Misi kami: menulis artikel yang informatif, clean layout, dan pengalaman membaca yang nyaman.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Kontak</h2>
+    <p class="mb-6 leading-relaxed">
+      Kamu bisa menghubungi kami melalui email: <a href="mailto:contact@myblog.com" class="text-blue-600 hover:underline">contact@myblog.com</a>
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    © 2026 MyBlog
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

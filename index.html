@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>MyBlog</title>
+  <meta name="description" content="Tempat berbagi ide dan pengalaman dengan desain modern dan responsive." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="./assets/android-chrome-192x192.png" />
+  <link rel="icon" sizes="512x512" href="./assets/android-chrome-512x512.png" />
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="./assets/site.webmanifest" />
+  
+  <!-- Tailwind CSS -->
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- Logo -->
+      <h1 class="text-xl font-semibold">MyBlog</h1>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="./index.html" class="hover:text-gray-500">Home</a>
+        <a href="./about.html" class="hover:text-gray-500">About</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="menuBtn" class="md:hidden text-2xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
+      <a href="./index.html" class="block py-2">Home</a>
+      <a href="./about.html" class="block py-2">About</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-3xl mx-auto px-4 py-10 text-center">
+    <h2 class="text-3xl font-bold">Tulisan & Cerita</h2>
+    <p class="text-gray-500 mt-2">Tempat berbagi ide dan pengalaman</p>
+  </section>
+
+  <!-- POST GRID -->
+  <main class="max-w-6xl mx-auto px-4 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- CARD -->
+      <a href="./src/post.html" class="group">
+        <div class="overflow-hidden rounded-xl">
+          <img loading="lazy" src="https://picsum.photos/400/250" 
+               class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+        </div>
+
+        <h3 class="mt-4 text-lg font-semibold group-hover:underline">
+          Judul Artikel Pertama
+        </h3>
+
+        <p class="text-sm text-gray-500 mt-2">
+          Ini adalah deskripsi singkat artikel supaya terlihat seperti blog modern.
+        </p>
+      </a>
+
+      <!-- DUPLICATE CARD -->
+      <a href="./src/post.html" class="group">
+        <div class="overflow-hidden rounded-xl">
+          <img loading="lazy" src="https://picsum.photos/401/250" 
+               class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+        </div>
+
+        <h3 class="mt-4 text-lg font-semibold group-hover:underline">
+          Belajar Tailwind dari Nol
+        </h3>
+
+        <p class="text-sm text-gray-500 mt-2">
+          Cara cepat memahami utility-first CSS dengan Tailwind.
+        </p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    © 2026 MyBlog
+  </footer>
+
+  <!-- SCRIPT -->
+    <script src="./script.js"></script>
+  
+</body>
+</html>
