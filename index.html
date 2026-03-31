@@ -2,135 +2,86 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>MyBlog</title>
-    <meta
-      name="description"
-      content="Tempat berbagi ide dan pengalaman dengan desain modern dan responsive."
-    />
-
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yusuf Habib Blog</title>
+    <meta name="description" content="asdadasd" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./assets/ico/favicon.ico" type="image/x-icon" />
     <link
       rel="icon"
+      href="./assets/ico/favicon-32x32.png"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
     />
     <link
       rel="icon"
+      href="./assets/ico/favicon-16x16.png"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicon-16x16.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/apple-touch-icon.png"
+      href="./assets/ico/apple-touch-icon.png"
     />
     <link
       rel="icon"
       sizes="192x192"
-      href="./assets/android-chrome-192x192.png"
+      href="./assets/ico/android-chrome-192x192.png"
     />
     <link
       rel="icon"
       sizes="512x512"
-      href="./assets/android-chrome-512x512.png"
+      href="./assets/ico/android-chrome-512x512.png"
     />
-
-    <!-- PWA manifest -->
     <link rel="manifest" href="./assets/site.webmanifest" />
-
-    <!-- Tailwind CSS -->
-    <link href="./src/output.css" rel="stylesheet" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./src/output.css" />
   </head>
-
   <body class="bg-white text-gray-900">
-    <!-- NAVBAR -->
     <header class="border-b">
       <div
-        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4"
       >
-        <!-- Logo -->
-        <h1 class="text-xl font-semibold">MyBlog</h1>
-
-        <!-- Desktop Menu -->
-        <nav class="hidden md:flex gap-6 text-sm">
-          <a href="./index.html" class="hover:text-gray-500">Home</a>
-          <a href="./about.html" class="hover:text-gray-500">About</a>
+        <h1 class="text-xl font-semibold">Yusuf Habib Blog</h1>
+        <nav class="hidden gap-6 text-sm md:flex">
+          <a href="./index.html" class="hover:text-gray-500">Beranda</a>
+          <a href="./tentang-saya.html" class="hover:text-gray-500"
+            >Tentang Saya</a
+          >
         </nav>
-
-        <!-- Hamburger -->
-        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+        <button id="menuBtn" class="text-2xl md:hidden">☰</button>
       </div>
-
-      <!-- Mobile Menu -->
       <div id="mobileMenu" class="hidden px-4 pb-4 md:hidden">
-        <a href="./index.html" class="block py-2">Home</a>
-        <a href="./about.html" class="block py-2">About</a>
+        <a href="./index.html" class="block py-2">Beranda</a>
+        <a href="./tentang-saya.html" class="block py-2">Tentang Saya</a>
       </div>
     </header>
-
-    <!-- HERO -->
-    <section class="max-w-3xl mx-auto px-4 py-10 text-center">
-      <h2 class="text-3xl font-bold">Tulisan & Cerita</h2>
-      <p class="text-gray-500 mt-2">Tempat berbagi ide dan pengalaman</p>
+    <section class="mx-auto max-w-3xl px-4 py-10 text-center">
+      <h2 class="text-3xl font-bold">Tulisan dan Cerita</h2>
+      <p class="mt-2 text-gray-500">Tempat berbagi ide dan pengalaman</p>
     </section>
-
-    <!-- POST GRID -->
-    <main class="max-w-6xl mx-auto px-4 pb-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- CARD -->
-        <a href="./src/post.html" class="group">
+    <main class="mx-auto max-w-6xl px-4 pb-10">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <a href="" class="group">
           <div class="overflow-hidden rounded-xl">
             <img
+              src="./assets/images/dummy.webp"
+              alt=""
               loading="lazy"
-              src="https://picsum.photos/400/250"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+              class="h-48 w-full object-cover transition duration-300 group-hover:scale-105"
             />
           </div>
-
           <h3 class="mt-4 text-lg font-semibold group-hover:underline">
-            Judul Artikel Pertama
+            Judul blogpost
           </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Ini adalah deskripsi singkat artikel supaya terlihat seperti blog
-            modern.
-          </p>
-        </a>
-
-        <!-- DUPLICATE CARD -->
-        <a href="./src/post.html" class="group">
-          <div class="overflow-hidden rounded-xl">
-            <img
-              loading="lazy"
-              src="https://picsum.photos/401/250"
-              class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
-            />
-          </div>
-
-          <h3 class="mt-4 text-lg font-semibold group-hover:underline">
-            Belajar Tailwind dari Nol
-          </h3>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Cara cepat memahami utility-first CSS dengan Tailwind.
-          </p>
+          <p class="mt-2 text-sm text-gray-500">deskripsi blogpost</p>
         </a>
       </div>
     </main>
-
-    <!-- FOOTER -->
     <footer class="border-t py-6 text-center text-sm text-gray-500">
-      © 2026 MyBlog
+      © 2026 Yusuf Habib Blog
     </footer>
 
-    <!-- SCRIPT -->
     <script src="./script.js"></script>
   </body>
 </html>
