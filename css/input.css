@@ -2,10 +2,14 @@
 
 @layer components {
   .prose-custom h2 {
-    @apply text-2xl font-semibold mt-10 mb-4;
+    @apply mt-10 mb-4 text-2xl font-semibold;
   }
 
   .prose-custom p {
     @apply mb-6 leading-relaxed;
   }
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
 }
