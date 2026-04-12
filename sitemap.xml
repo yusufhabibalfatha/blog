@@ -1,18 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
 
+  <!-- Home ID -->
   <url>
     <loc>https://yusuf-habib.blog/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="id"
+      href="https://yusuf-habib.blog/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://yusuf-habib.blog/en/"
+    />
+    <lastmod>2026-04-12</lastmod>
   </url>
 
+  <!-- Home EN -->
+  <url>
+    <loc>https://yusuf-habib.blog/en/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="id"
+      href="https://yusuf-habib.blog/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://yusuf-habib.blog/en/"
+    />
+    <lastmod>2026-04-12</lastmod>
+  </url>
+
+  <!-- About ID -->
   <url>
     <loc>https://yusuf-habib.blog/tentang-saya.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="id"
+      href="https://yusuf-habib.blog/tentang-saya.html"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://yusuf-habib.blog/en/about-me.html"
+    />
+    <lastmod>2026-04-12</lastmod>
+  </url>
+
+  <!-- About EN -->
+  <url>
+    <loc>https://yusuf-habib.blog/en/about-me.html</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="id"
+      href="https://yusuf-habib.blog/tentang-saya.html"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://yusuf-habib.blog/en/about-me.html"
+    />
+    <lastmod>2026-04-12</lastmod>
   </url>
 
 </urlset>
